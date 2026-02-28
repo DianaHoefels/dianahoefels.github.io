@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Diana Höfels . Computational Linguistics & NLP</title>
+  <meta name="description" content="Diana Höfels . Multilingual NLP, explainable AI, fact-checking, and harmful language detection." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header class="wrap header">
+    <div>
+      <h1>Diana Höfels</h1>
+      <p class="subtitle">
+        Computational Linguist . Multilingual NLP . Explainable AI . Fact-checking . Harmful language detection
+      </p>
+      <p class="links">
+        <a href="mailto:YOUR_EMAIL@domain.com">Email</a>
+        <span class="dot">·</span>
+        <a href="https://www.linkedin.com/in/YOUR_HANDLE/" target="_blank" rel="noreferrer">LinkedIn</a>
+        <span class="dot">·</span>
+        <a href="https://scholar.google.com/citations?user=YOUR_ID" target="_blank" rel="noreferrer">Google Scholar</a>
+        <span class="dot">·</span>
+        <a href="https://github.com/YOUR_HANDLE" target="_blank" rel="noreferrer">GitHub</a>
+        <span class="dot">·</span>
+        <a href="cv.pdf" target="_blank" rel="noreferrer">CV (PDF)</a>
+      </p>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="card">
+      <h2>About</h2>
+      <p>
+        I work at the intersection of multilingual NLP, explainable AI, and knowledge verification.
+        My recent research focuses on cross-lingual fact-checking and the evaluation of large language models in low-resource settings.
+        I am also interested in sexism and offensive language detection, especially when emotion signals and explainability can improve robustness and user trust.
+      </p>
+      <p class="meta">
+        MA in Computational Linguistics, University of Tübingen.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Research Interests</h2>
+      <ul>
+        <li>Cross-lingual transfer learning for fact-checking in low-resource languages (Romanian)</li>
+        <li>Human-centered explainability for NLP systems, including retrieval-augmented LLMs</li>
+        <li>LLM evaluation, reliability, and trust calibration</li>
+        <li>Sexism and offensive language detection, multi-task learning, emotion-aware models</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Publications</h2>
+      <ol class="pubs">
+        <li>
+          <span class="pub-title">Emotion Signals for Sexist and Offensive Language Detection: A Multi-task Learning Approach</span><br />
+          <span class="pub-authors">Diana Höfels, Alexandra [Surname]</span><br />
+          <span class="pub-venue">2023</span>
+          <span class="dot">·</span>
+          <a href="ADD_PAPER_LINK" target="_blank" rel="noreferrer">Paper</a>
+        </li>
+        <li>
+          <span class="pub-title">Cross-Lingual Transfer Learning for News Fact-Checking in Low-Resource Languages: A Case of Romanian</span><br />
+          <span class="pub-authors">Diana Höfels</span><br />
+          <span class="pub-venue">Master’s thesis</span>
+          <span class="dot">·</span>
+          <a href="ADD_THESIS_LINK" target="_blank" rel="noreferrer">PDF</a>
+        </li>
+      </ol>
+      <p class="meta">
+        Add more entries as you submit to LREC / ACL workshops, including DELITE archival proceedings.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Projects</h2>
+      <ul>
+        <li>
+          <strong>Romanian cross-lingual fact-checking</strong> . Experiments with XLM-R, mBERT, mT5 and LLM-based verification setups.
+        </li>
+        <li>
+          <strong>Explainable verification</strong> . Showing retrieved evidence and justification traces for RAG-style fact-checking.
+        </li>
+        <li>
+          <strong>Harmful language detection</strong> . Sexism and offensive language detection with emotion signals and multi-task learning.
+        </li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Contact</h2>
+      <p>
+        Email is best. For collaborations, include a short description of the idea, timeline, and what you need.
+      </p>
+      <p class="links">
+        <a href="mailto:YOUR_EMAIL@domain.com">YOUR_EMAIL@domain.com</a>
+      </p>
+    </section>
+
+    <footer class="footer">
+      <p class="meta">© <span id="year"></span> Diana Höfels . Last updated: <span id="updated"></span></p>
+    </footer>
+  </main>
+
+  <script>
+    const now = new Date();
+    document.getElementById("year").textContent = now.getFullYear();
+    document.getElementById("updated").textContent = now.toISOString().slice(0, 10);
+  </script>
+</body>
+</html>
