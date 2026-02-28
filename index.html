@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Diana Höfels | Computational Linguistics & NLP</title>
-  <meta name="description" content="Diana Höfels. Multilingual NLP, human-centered explainable AI, fact-checking in low-resource languages, and harmful language detection." />
+  <meta name="description" content="Diana Höfels. Multilingual NLP, human-centered explainable AI, cross-lingual fact-checking in low-resource languages, and harmful language detection." />
   <link rel="stylesheet" href="styles.css" />
 </head>
 
@@ -15,6 +15,11 @@
       <p class="subtitle">
         Computational Linguist working on multilingual NLP, human-centered explainable AI, and fact-checking in low-resource languages.
       </p>
+
+      <p class="meta">
+        Independent Researcher. MA in Computational Linguistics, University of Tübingen.
+      </p>
+
       <p class="links">
         <a href="mailto:diana.hoefels@gmail.com">Email</a>
         <span class="dot">·</span>
@@ -33,14 +38,23 @@
 
   <main class="wrap">
     <section class="card">
+      <h2>News</h2>
+      <ul>
+        <li><strong>2026</strong> . Active submissions and collaboration in the ACL and LREC ecosystem, including archival workshop proceedings.</li>
+        <li><strong>2025</strong> . Cross-lingual fact-checking experiments for Romanian, focused on transfer learning and evaluation in low-resource conditions.</li>
+      </ul>
+      <p class="meta">
+        You can keep this section short and update it whenever something changes. It signals momentum.
+      </p>
+    </section>
+
+    <section class="card">
       <h2>About</h2>
       <p>
         I am a computational linguist focusing on multilingual natural language processing, cross-lingual transfer learning, and explainable AI.
         My research centers on fact-checking and misinformation detection in low-resource settings, particularly Romanian, and on building human-centered NLP systems that support transparency, trust, and responsible deployment.
         I also work on sexism and offensive language detection, combining linguistic features, emotion signals, and multi-task learning approaches.
-      </p>
-      <p class="meta">
-        MA in Computational Linguistics, University of Tübingen.
+        My current direction explores how retrieval-augmented LLMs can provide transparent evidence and improve user trust in automated fact-checking.
       </p>
     </section>
 
@@ -55,6 +69,23 @@
     </section>
 
     <section class="card">
+      <h2>Newsletter</h2>
+      <p>
+        I write short pieces on multilingual NLP, explainability, fact-checking, and the research to product interface.
+        These are currently published on LinkedIn. I maintain an index here for easy access.
+      </p>
+      <ul>
+        <li><a href="ADD_LINKEDIN_NEWSLETTER_HOME_LINK" target="_blank" rel="noreferrer">AI and Linguistics with Diana . Newsletter on LinkedIn</a></li>
+        <li><a href="ADD_POST_LINK_1" target="_blank" rel="noreferrer">Edition 1 . Title</a></li>
+        <li><a href="ADD_POST_LINK_2" target="_blank" rel="noreferrer">Edition 2 . Title</a></li>
+        <li><a href="ADD_POST_LINK_3" target="_blank" rel="noreferrer">Edition 3 . Title</a></li>
+      </ul>
+      <p class="meta">
+        Tip. Add each new edition as a new bullet here. This becomes your stable archive, while LinkedIn remains your distribution channel.
+      </p>
+    </section>
+
+    <section class="card">
       <h2>Publications</h2>
       <ol class="pubs">
         <li>
@@ -63,6 +94,63 @@
           <span class="pub-venue">EDO Workshop at Language &amp; Technology Conference (LTC 2023).</span>
           <span class="dot">·</span>
           <a href="https://www.researchgate.net/publication/373873430_Emotion_Signals_for_Sexist_and_Offensive_Language_Detection_A_Multi-task_Learning_Approach" target="_blank" rel="noreferrer">Paper</a>
+        </li>
+
+        <li>
+          <span class="pub-title">CoRoSeOf - An Annotated Corpus of Romanian Sexist and Offensive Tweets</span><br />
+          <span class="pub-authors">Diana Constantina Hoefels, Çağrı Çöltekin, Irina Diana Mădroane.</span> 2022.<br />
+          <span class="pub-venue">Proceedings of the Thirteenth Language Resources and Evaluation Conference (LREC).</span>
+          <span class="dot">·</span>
+          <a href="https://aclanthology.org/2022.lrec-1.243/" target="_blank" rel="noreferrer">Paper</a>
+        </li>
+
+        <li>
+          <span class="pub-title">TueMix at SemEval-2020 Task 9: Logistic Regression with Linguistic Feature Set</span><br />
+          <span class="pub-authors">Elizabeth Bear, Diana Constantina Hoefels, Mihai Manolescu.</span> 2020.<br />
+          <span class="pub-venue">Proceedings of the Fourteenth Workshop on Semantic Evaluation (SemEval).</span>
+          <span class="dot">·</span>
+          <a href="https://aclanthology.org/2020.semeval-1.178/" target="_blank" rel="noreferrer">Paper</a>
+        </li>
+      </ol>
+    </section>
+
+    <section class="card">
+      <h2>Projects</h2>
+      <ul>
+        <li>
+          <strong>Cross-lingual fact-checking for Romanian</strong> . Transfer learning setups for claim verification, including multilingual encoder and sequence-to-sequence approaches.
+        </li>
+        <li>
+          <strong>Explainable verification</strong> . Evidence presentation and justification traces for retrieval-augmented fact-checking, with a human-centered focus.
+        </li>
+        <li>
+          <strong>Harmful language detection</strong> . Sexism and offensive language detection using emotion signals and multi-task learning.
+        </li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Contact</h2>
+      <p>
+        Email is best. If you are reaching out about collaboration, please include a short description of the idea, timeline, and what you need.
+      </p>
+      <p class="links">
+        <a href="mailto:diana.hoefels@gmail.com">diana.hoefels@gmail.com</a>
+      </p>
+    </section>
+
+    <footer class="footer">
+      <p class="meta">© <span id="year"></span> Diana Höfels . Last updated: <span id="updated"></span></p>
+    </footer>
+  </main>
+
+  <script>
+    const now = new Date();
+    document.getElementById("year").textContent = now.getFullYear();
+    document.getElementById("updated").textContent = now.toISOString().slice(0, 10);
+  </script>
+</body>
+</html>          <a href="https://www.researchgate.net/publication/373873430_Emotion_Signals_for_Sexist_and_Offensive_Language_Detection_A_Multi-task_Learning_Approach" target="_blank" rel="noreferrer">Paper</a>
         </li>
 
         <li>
