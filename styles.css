@@ -1,3 +1,4 @@
+/* styles.css */
 :root{
   --bg: #0b0c10;
   --card: #12131a;
@@ -9,6 +10,7 @@
 
 *{ box-sizing: border-box; }
 html,body{ height:100%; }
+
 body{
   margin:0;
   font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
@@ -26,6 +28,20 @@ body{
 .header{
   padding-top: 44px;
   padding-bottom: 18px;
+}
+
+.header-flex{
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.profile-photo{
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1px solid var(--line);
 }
 
 h1{
@@ -94,4 +110,16 @@ li{ margin: 8px 0; }
 .footer{
   margin-top: 10px;
   text-align: center;
+}
+
+/* Responsive: stack photo above text on small screens */
+@media (max-width: 640px){
+  .header-flex{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .profile-photo{
+    width: 140px;
+    height: 140px;
+  }
 }
