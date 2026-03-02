@@ -11,6 +11,7 @@
 
 *{ box-sizing: border-box; }
 html,body{ margin:0; padding:0; }
+
 body{
   font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
   color: var(--text);
@@ -87,6 +88,7 @@ body{
   align-self: start;
 }
 
+/* Increased spacing under image */
 .photo-wrap{
   width: 220px;
   height: 220px;
@@ -95,7 +97,7 @@ body{
   padding: 10px;
   display: grid;
   place-items: center;
-  margin-bottom: 18px;
+  margin-bottom: 28px; /* increased spacing */
 }
 
 .photo{
@@ -105,28 +107,29 @@ body{
   object-fit: cover;
 }
 
+/* Added top margin to name */
 .name{
   font-size: 28px;
-  margin: 0 0 6px 0;
+  margin: 10px 0 12px 0; /* spacing above + below */
   letter-spacing: -0.01em;
 }
 
 .role{
-  margin: 0 0 18px 0;
+  margin: 0 0 22px 0; /* slightly more breathing room */
   color: var(--muted);
   font-size: 14.5px;
 }
 
 .sidebar-list{
   display: grid;
-  gap: 10px;
-  margin: 14px 0 18px;
+  gap: 12px;
+  margin: 14px 0 22px;
 }
 
 .row{
   display: grid;
-  grid-template-columns: 18px 1fr;
-  gap: 10px;
+  grid-template-columns: 20px 1fr;
+  gap: 12px;
   align-items: start;
   color: var(--muted);
   font-size: 14px;
@@ -155,6 +158,17 @@ body{
 
 .sidebar-links a:hover{
   text-decoration: underline;
+}
+
+/* Icons in sidebar — MOVED OUTSIDE media query */
+.icon{
+  width: 18px;
+  color: #444;
+  margin-top: 2px;
+}
+
+.orcid{
+  color: #A6CE39;
 }
 
 /* Content */
@@ -247,14 +261,4 @@ body{
     width: 180px;
     height: 180px;
   }
-
-  /* Icons in sidebar */
-.icon{
-  width: 18px;
-  color: #444;
-  margin-top: 2px;
-}
-
-.orcid{
-  color: #A6CE39; /* ORCID green */
 }
