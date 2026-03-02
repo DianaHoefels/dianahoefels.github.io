@@ -247,4 +247,14 @@ body{
     width: 180px;
     height: 180px;
   }
+
+  /* Icons in sidebar */
+.icon{
+  width: 18px;
+  color: #444;
+  margin-top: 2px;
+}
+
+.orcid{
+  color: #A6CE39; /* ORCID green */
 }
