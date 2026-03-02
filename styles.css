@@ -109,7 +109,7 @@ body{
 
 /* Added top margin to name */
 .name{
-  font-size: 28px;
+  font-size: 26px;
   margin: 10px 0 12px 0; /* spacing above + below */
   letter-spacing: -0.01em;
 }
